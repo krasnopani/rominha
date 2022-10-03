@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=w, initial-scale=1.0" />
+    <title>FinalProject</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+        }
+      h1 {
+        text-align: center;
+        color: #ce0730;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode";
+      }
+      h2 {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-style: italic;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+      }
+      .name {
+        font-style: italic;
+        font-weight: bold;
+        color: #ce0730;
+      }
+      .link {
+        margin-bottom: 20px;
+        margin-top: 0px;
+        text-align: center;
+      }
+      .link:hover {
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      .content {
+        max-width: 600px;
+        margin: auto;
+        padding: 40px;
+      }
+      .footer {
+        font-size: 11px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+      a {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+      }
+
+      button {
+        margin: 0 auto;
+        display: block;
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px;
+        border: 1px solid;
+        border-color: #ce0730;
+        background-color: #ce0730;
+        color: blanchedalmond;
+        box-shadow: 0 5px 5px #e2aaae;
+        transition:ease-in-out:200ms;
+      }
+      button:hover {
+        margin: auto;
+        display: block;
+        background-color: blanchedalmond;
+        color: #ce0730;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Rominha Wines</h1>
+      <h2>From the heart of Ribatejo...</h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/271/original/rominha.jpg?1660167847"
+        width="200px"
+      />
+      <p>
+        <span class="name">Rominha Wines</span> was born from passion of wines
+        and attachment to local traditions. We follow old believe the quality
+        starts with methods of cultivation and continues with the methods of
+        production. For that reason our grapes are <strong>organic</strong> and
+        wine making is done manually and contains no aditives.
+      </p>
+
+      <div class="link">
+        <a href="https://en.wikipedia.org/wiki/Organic_wine"
+          >Learn more about organic wine on Wikipedia</a
+        >
+      </div>
+      <p>
+        The wine which receives a lot of care pays back with unique taste you
+        will <em>fall in love with...</em> Check it yourself!
+      </p>
+      <hr />
+      <br />
+      <button>Try our wines</button>
+      <br />
+      <br />
+      <div class="footer">This page was built by Aleksandra Cisek</div>
+    </div>
+    <script>
+      function tryButton() {
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert("Let's schedule wine tasting!   🍷");
+        } else {
+          alert("Sorry, you are too young for wine tasting...  🙁");
+        }
+      }
+      let tryourwinesButton = document.querySelector("button");
+      tryourwinesButton.addEventListener("click", tryButton);
+    </script>
+  </body>
+</html>
